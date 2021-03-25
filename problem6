@@ -1,0 +1,13 @@
+#1,2,3 sequence 
+s=input()
+s=s[1:len(s)-1]
+f=int(0)
+l=list(map(int,s.split(',')))
+for i in range (0,len(l)-2):
+    if(l[i]==1 and l[i+1]==2 and l[i+2]==3):
+        f=1
+if(f==1):
+    print("True")
+else:
+    print("False")
+    
