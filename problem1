@@ -1,0 +1,9 @@
+#python code to add ing in the end 
+s=input()
+a=len(s)
+if(a<3):
+    print(s)
+elif(s.find("ing")!=-1):
+    print(s+"ly")
+else:
+    print(s+"ing")
