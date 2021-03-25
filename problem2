@@ -1,0 +1,16 @@
+#balanced parnthesis 
+s=input()
+c=int(0)
+f=int(0)
+for i in range(0,len(s)):
+    if(s[i]=='('):
+        c=c+1
+    elif(s[i]==')'):
+        c=c-1
+    if(c<0):
+        f=1;
+        break
+if(c==0 and f==0):
+    print("True")
+else :
+    print("false")
