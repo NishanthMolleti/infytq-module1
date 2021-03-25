@@ -1,0 +1,13 @@
+a,b=map(int,input().split(','))
+x=int(a)
+print(a)
+print(b)
+while(a>0):
+    x=x*(a%10)
+    a=a//10
+if(x==b):
+    print("True")
+else :
+    print("False")
+
+    
