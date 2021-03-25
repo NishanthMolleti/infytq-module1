@@ -1,0 +1,13 @@
+#given a list of numbers , return true if 9 is present in the first four positions
+s=input()
+s=s[1:-1]
+f=int(0)
+l=list(map(int,s.split(',')))
+for i in range(0,min(len(l),4)):
+    if(l[i]==9):
+        f=1
+        break
+if(f==1):
+    print("True")
+else:
+    print("False")
